@@ -24,10 +24,9 @@ public class CentralLimitingTheorem {
     }
 
     public void generateHistogram(Histogram histogram, int numSamples) {
-        for (int i = 0; i < numSamples; i++) {
-            double sum = calculateSum();
-            histogram.put(sum);
-        }
+
+    
+    
     }
 
     /**
@@ -37,9 +36,9 @@ public class CentralLimitingTheorem {
      */
     private double calculateSum() {
         double sum = 0;
-        for(int i=0;i<sampleSize;i++){
-            sum += myRandom.nextDouble();
-        }
+
+        
+        
         return sum;
     }
 

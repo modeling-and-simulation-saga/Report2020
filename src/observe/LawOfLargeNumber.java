@@ -40,14 +40,11 @@ public class LawOfLargeNumber {
     public Result calculate(int numSamples) {
         double average = 0.;
         double sigma = 0.;
-        for(int i=0;i<numSamples;i++){
-            double oneAverage = calculateAverage();
-            average += oneAverage;
-            sigma += Math.pow((oneAverage-mu), 2.);           
-        }
-        average /= numSamples;
-        sigma /= numSamples;
-        sigma = Math.sqrt(sigma);       
+
+        
+        
+        
+        
         return new Result(sampleSize, average, sigma);
     }
     
@@ -57,10 +54,10 @@ public class LawOfLargeNumber {
      */
     private double calculateAverage(){
         double average = 0;
-        for(int i=0;i<sampleSize;i++){
-            average += myRandom.nextDouble();
-        }
-        average /= sampleSize;
+
+        
+        
+        
         return average;
     }
 

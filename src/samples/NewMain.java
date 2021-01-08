@@ -1,7 +1,6 @@
 package samples;
-import method.Transform;
+
 import java.io.IOException;
-import java.util.function.DoubleFunction;
 import method.Uniform;
 /**
  *
